@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/error_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- Error Icon -->
+    <ImageView android:src="@drawable/error_cloud"
+        android:layout_width="@dimen/error_icon_size"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/description_error_icon"/>
+
+    <!-- Unable to connect -->
+    <com.ronakmanglani.bookworm.ui.view.RobotoLightTextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/error_message_marginTop"
+        android:gravity="center"
+        android:text="@string/server_unreachable"
+        android:textSize="@dimen/text_large"/>
+
+    <!-- Try again -->
+    <com.ronakmanglani.bookworm.ui.view.RobotoBoldTextView
+        android:id="@+id/try_again"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/error_try_again_padding"
+        android:text="@string/try_again"
+        android:textSize="@dimen/text_xxlarge"
+        android:textColor="@color/accent"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"/>
+
+</LinearLayout>

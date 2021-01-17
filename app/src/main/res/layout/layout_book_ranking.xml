@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/book_ranking_holder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dist_medium"
+    android:orientation="vertical"
+    android:padding="@dimen/dist_large"
+    android:background="@color/text_secondary"
+    tools:showIn="@layout/fragment_book">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView style="@style/BookDetailIconsStyle"
+            android:src="@drawable/icon_ranking"
+            tools:ignore="ContentDescription" />
+
+        <com.ronakmanglani.bookworm.ui.view.RobotoBoldTextView
+            style="@style/BookDetailHeaderStyle"
+            android:text="@string/detail_ranking" />
+
+    </LinearLayout>
+
+    <!-- Value -->
+    <com.ronakmanglani.bookworm.ui.view.RobotoLightTextView
+        android:id="@+id/book_current_rank"
+        style="@style/BookDetailValueStyle"
+        tools:text="Current Rank : 2"/>
+
+    <!-- Value -->
+    <com.ronakmanglani.bookworm.ui.view.RobotoLightTextView
+        android:id="@+id/book_weeks_list"
+        style="@style/BookDetailValueStyle"
+        tools:text="Weeks on List : 7"/>
+
+</LinearLayout>

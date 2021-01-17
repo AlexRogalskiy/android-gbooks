@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- Tablet Mode Flag -->
+    <bool name="is_tablet">false</bool>
+
+    <!-- General Margin/Padding -->
+    <dimen name="dist_xxlarge">64dp</dimen>
+    <dimen name="dist_xlarge">32dp</dimen>
+    <dimen name="dist_large">16dp</dimen>
+    <dimen name="dist_medium">8dp</dimen>
+    <dimen name="dist_small">4dp</dimen>
+    <dimen name="dist_xsmall">2dp</dimen>
+    <dimen name="dist_xxsmall">1dp</dimen>
+
+    <!-- General Text Sizes -->
+    <dimen name="text_xxlarge">20sp</dimen>
+    <dimen name="text_xlarge">18sp</dimen>
+    <dimen name="text_large">16sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+
+    <!-- Navigation Drawer -->
+    <dimen name="drawer_header_height">145dp</dimen>
+    <dimen name="drawer_header_icon_size">40dp</dimen>
+
+    <!-- RecyclerView -->
+    <dimen name="recycler_view_padding">6dp</dimen>
+    <dimen name="recycler_item_padding">2dp</dimen>
+
+    <!-- Progress Circle -->
+    <dimen name="progress_circle_width">80dp</dimen>
+    <dimen name="progress_circle_height">80dp</dimen>
+    <dimen name="progress_circle_stroke">4dp</dimen>
+    <dimen name="progress_circle_small_width">40dp</dimen>
+    <dimen name="progress_circle_small_height">40dp</dimen>
+    <dimen name="progress_circle_small_stroke">3dp</dimen>
+
+    <!-- Error Message -->
+    <dimen name="error_icon_size">120dp</dimen>
+    <dimen name="error_message_marginTop">15dp</dimen>
+    <dimen name="error_try_again_padding">8dp</dimen>
+
+    <!-- Category Item -->
+    <dimen name="category_item_padding">10dp</dimen>
+    <dimen name="category_icon_size">32dp</dimen>
+
+    <!-- Book Grid Item  -->
+    <dimen name="book_grid_card_width">120dp</dimen>
+    <dimen name="book_grid_cover_height">150dp</dimen>
+    <dimen name="book_grid_menu_size">50dp</dimen>
+    <dimen name="book_grid_menu_icon_margin">3dp</dimen>
+    <dimen name="book_grid_menu_icon_size">20dp</dimen>
+    <dimen name="book_grid_text_margin">5dp</dimen>
+
+    <!-- Book List Item -->
+    <dimen name="book_list_card_width">380dp</dimen>
+    <dimen name="book_list_cover_width">55dp</dimen>
+    <dimen name="book_list_cover_height">80dp</dimen>
+    <dimen name="book_list_menu_size">50dp</dimen>
+    <dimen name="book_list_menu_icon_size">20dp</dimen>
+
+    <!-- Book Details Page -->
+    <dimen name="detail_cover_height">160dp</dimen>
+    <dimen name="detail_cover_width">100dp</dimen>
+    <dimen name="detail_icon_size">16dp</dimen>
+    <dimen name="detail_fab_margin">12dp</dimen>
+
+    <!-- About Page -->
+    <dimen name="about_icon_size">120dp</dimen>
+
+</resources>

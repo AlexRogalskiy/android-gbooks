@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.neenbedankt.android-apt'
+
+// Load keystore.properties
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+//    signingConfigs {
+//        release {
+//            storeFile file(keystoreProperties['storeFile'])
+//            keyAlias keystoreProperties['keyAlias']
+//            storePassword keystoreProperties['storePassword']
+//            keyPassword keystoreProperties['keyPassword']
+//        }
+//    }
+
+    defaultConfig {
+        applicationId "com.ronakmanglani.bookworm"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 4
+        versionName "1.5"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            //signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.github.clans:fab:1.6.4'
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    implementation 'com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE'
+    implementation 'com.nononsenseapps:filepicker:2.5.3'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'me.dm7.barcodescanner:zbar:1.8.4'
+    implementation 'net.simonvt.schematic:schematic:0.7.0'
+
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+    annotationProcessor 'net.simonvt.schematic:schematic-compiler:0.7.0'
+}

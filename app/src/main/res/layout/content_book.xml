@@ -1,0 +1,32 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/book_detail_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/dist_xxlarge"
+    android:clipToPadding="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/fragment_book">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants">
+
+        <!-- Title, Author, Rating, etc -->
+        <include layout="@layout/layout_book_basic" />
+
+        <!-- Bestseller Ranking -->
+        <include layout="@layout/layout_book_ranking" />
+
+        <!-- Publication Name and Date -->
+        <include layout="@layout/layout_book_publication" />
+
+        <!-- Book Description -->
+        <include layout="@layout/layout_book_description" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
